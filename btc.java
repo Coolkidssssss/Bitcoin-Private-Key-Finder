@@ -1,5 +1,4 @@
 package btc.btc2;
-
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.Scanner;
@@ -15,9 +14,10 @@ public class btc {
 		
 
 				Scanner reader = new Scanner(System.in);  
-				System.out.println("Enter Bitcoin Address: ");
+				System.out.println("Enter Bitcoin Address: 12ib7dApVFvg82TXKycWBNpN8kFyiAN1dr ");
 				String GivenAddress = reader.nextLine();	
 				PrintWriter writer = new PrintWriter(new FileWriter("foundaddress.txt"));
+
 					
 				for(;;)	{
 				String net = "prod";
@@ -47,6 +47,7 @@ public class btc {
 					
 						}
 							reader.close(); writer.flush(); writer.close();
+						
 		}
 
 }
